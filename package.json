@@ -1,0 +1,27 @@
+{
+  "name": "@galkin/zoom-meeting-api",
+  "version": "0.1.0",
+  "keywords": [
+    "zoom",
+    "meeting-api"
+  ],
+  "license": "UNLICENSED",
+  "author": "Nikita Galkin",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "generate": "openapi --input spec/ZoomMeetingAPISpec.json --name Client --client axios --output src --useOptions --indent=2",
+    "prepare": "tsc --project tsconfig.json"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "form-data": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.16.3",
+    "openapi-typescript-codegen": "^0.24.0",
+    "typescript": "^5.0.4"
+  }
+}

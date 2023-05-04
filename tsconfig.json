@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "noImplicitAny": false,
+    "noUnusedLocals": false,
+    "removeComments": false,
+    "useUnknownInCatchVariables": false,
+    "target": "es6",
+    "sourceMap": true,
+    "allowJs": false,
+    "outDir": "dist",
+    "declaration": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["src/**/*"],
+}
