@@ -8,10 +8,11 @@ export class ApiError extends Error {
   public readonly url: string;
   public readonly status: number;
   public readonly statusText: string;
-  public readonly body: any;
+  public readonly body: unknown;
+  public readonly errorCode: number;
   public readonly request: ApiRequestOptions;
 
-  constructor(request: ApiRequestOptions, response: ApiResult, message: string) {
+  constructor(request: ApiRequestOptions, response: ApiResult, message: string, errorCode?: number) {
     super(message);
 
     this.name = 'ApiError';
@@ -19,6 +20,7 @@ export class ApiError extends Error {
     this.status = response.status;
     this.statusText = response.statusText;
     this.body = response.body;
+    this.errorCode = errorCode || 0;
     this.request = request;
   }
 }
