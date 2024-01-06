@@ -1,6 +1,6 @@
 {
   "name": "@galkin/zoom-meeting-api",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "keywords": [
     "zoom",
     "meeting-api"
@@ -16,12 +16,12 @@
     "prepare": "tsc --project tsconfig.json"
   },
   "dependencies": {
-    "axios": "^1.4.0",
+    "axios": "^1.6.5",
     "form-data": "^4.0.0"
   },
   "devDependencies": {
-    "@types/node": "^18.16.3",
-    "openapi-typescript-codegen": "^0.24.0",
-    "typescript": "^5.0.4"
+    "@types/node": "^20.10.6",
+    "openapi-typescript-codegen": "^0.25.0",
+    "typescript": "^5.3.3"
   }
 }
